@@ -1,0 +1,53 @@
+﻿#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  border: 3px solid blue;
+  background-color: grey;
+}
+
+#navigation {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  border: 3px solid blue;
+  background-color: grey;
+  background-color: grey;
+}
+
+#message-box {
+  background-color: grey;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  border: 3px solid blue;
+  background-color: grey;
+  background-color: grey;
+}
+
+#enter-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 70%;
+  background-color: grey;
+}
+
+#send-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 30%;
+  float: right;
+  background-color: grey;
+}
+
+

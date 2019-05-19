@@ -1,0 +1,54 @@
+﻿<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script type="text/javascript" src="functions.js"></script>
+
+<!-- <header id="header">
+  <p>
+    <span>Welcome!</span>
+  </p>
+</header> -->
+
+<!-- <nav id="navigation">
+    <p>
+      <span>Navigation!</span>
+    </p>
+  </nav>
+   -->
+
+<nav id="navigation">
+  <div class="tab">
+    <button class="tablinks" onclick="openWelcome()">Home Page</button>
+    <button class="tablinks" onclick="openChatPage()">Chat</button>
+  </div>
+</nav>
+
+<header id="header">
+  <p>
+    <span>Welcome!</span>
+  </p>
+</header>
+
+  <div id="message-container">
+      <div id="message-box">
+        <textarea id="see-message" rows="25" cols="75" readonly></textarea>
+      </div>
+      <button onclick="clearMessages()">Clear Messages</button>
+    </div>
+
+
+<div id="send-container">
+    <div id="enter-container">
+      <textarea id="text-input"
+     rows=3 cols=75></textarea>
+    </div>
+    <label id="switch">
+        <input type="checkbox" id="pg13">
+        <span class="slider round">PG-13</span>
+    </label>
+    
+    <button onclick="clearInputText()">Clear Input</button>
+    <button onclick="addMessage()">Send</button>
+  </div>
+
+

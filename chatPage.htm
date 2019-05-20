@@ -3,18 +3,6 @@
 </head>
 <script type="text/javascript" src="functions.js"></script>
 
-<!-- <header id="header">
-  <p>
-    <span>Welcome!</span>
-  </p>
-</header> -->
-
-<!-- <nav id="navigation">
-    <p>
-      <span>Navigation!</span>
-    </p>
-  </nav>
-   -->
 
 <nav id="navigation">
   <div class="tab">
@@ -29,26 +17,42 @@
   </p>
 </header>
 
-  <div id="message-container">
-      <div id="message-box">
-        <textarea id="see-message" rows="25" cols="75" readonly></textarea>
+<div id="message-container">
+  <textarea id="see-message" rows="25" cols="75" readonly></textarea>
+  <!-- <button onclick="clearMessages()">Clear Messages</button> -->
+    <div id="bottom-background">
+
+    </div>  <div id="send-container">
+      <div id="enter-container">
+        <textarea id="text-input" rows=3 cols=60></textarea>
+        <button id="send-button" onclick="addMessage()">Send</button>
       </div>
-      <button onclick="clearMessages()">Clear Messages</button>
     </div>
 
+  </div>
+</div>
+  
 
-<div id="send-container">
-    <div id="enter-container">
-      <textarea id="text-input"
-     rows=3 cols=75></textarea>
-    </div>
-    <label id="switch">
+<div id="button-container">
+  <div id="button-block">
+    <div id="left-buttons">
+      <img src="cross.png"">
+      <label id="switch"></label>
         <input type="checkbox" id="pg13">
         <span class="slider round">PG-13</span>
-    </label>
-    
-    <button onclick="clearInputText()">Clear Input</button>
-    <button onclick="addMessage()">Send</button>
-  </div>
+      </label>  
+    </div>    
+    <div id="middle-buttons">
+      <img src="triangle.png"">
+      <button id="clear-all" onclick="clearMessages()">Clear Messages</button>
+    </div>    
+    <div id="right-buttons">
+      <button id="clear-input" onclick="clearInputText()">Clear Input</button>
 
+
+    </div>
+
+
+  </div>
+</div>
 

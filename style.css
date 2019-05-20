@@ -1,22 +1,21 @@
 ﻿#header {
   position: fixed;
-  top: 50;
+  top: 25;
   right: 0;
   height: 50px;
   width: 100%;
-  border: 3px solid blue;
-  background-color: grey;
+  /* border: 3px solid blue; */
+  background-color: rgba(0, 202, 253, 0.575);
 }
 
 #navigation {
   position: fixed;
-  top: 25px;
+  top: 0px;
   right: 0;
   height: 25px;
   width: 100%;
-  border: 3px solid blue;
-  background-color: grey;
-  background-color: grey;
+  /* border: 3px solid blue; */
+  background-color: rgba(0, 202, 253, 0.575);
 }
 
 #message-container {
@@ -24,48 +23,165 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: grey;
   position: fixed;
-  top: 100px;
+  top: 75px;
   right: 0;
-  height: 600px;
+  height: 550px;
   width: 100%;
-  border: 3px solid blue;
-  background-color: rgba(90, 201, 201, 0.705);
+  /* border: 3px solid rgba(0, 0, 255, 0.63); */
+  background-color: rgba(82, 184, 159, 0.774);
 }
 
-#message-box {
+/* #message-box {
   display: flex;
   flex-direction: row;
   border-style: solid;
-}
+} */
 
 #see-message {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  background-color: black;
+  color:rgb(18, 245, 18);
 }
 
 #enter-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 575px;
+
 }
 
 #send-container {
   position: fixed;
-  left: 0;
-  top: 700;
+  display: flex;
+  justify-content: center;
+  top: 585;
   width: 100%;
-  background-color: red;
-  color: white;
   text-align: center;
 }
 
+#send-button{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(27, 12, 236, 0.548);
+}
+
+#text-input{
+  position: left;
+  background-color: rgb(10, 48, 46);
+  color:rgb(18, 245, 18);
+}
 
 textarea{
   resize:none;
 }
 
+#bottom-background {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  position: fixed;
+  top: 625px;
+  /* position: center; */
+  height: 100%;
+  width: 100%;
+  /* border: 3px solid rgba(0, 0, 255, 0.63); */
+  background-color: rgba(82, 184, 159, 0.774);
+  
+}
+
+#button-container{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 650px;
+  width: 100%;
+  text-align: center;
+}
+
+#button-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 570px;
+  height: 200px;
+}
+
+#left-buttons{
+  display:flex;
+  width: 190px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 
 
+#triangle{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid red; 
+
+}
+
+#middle-buttons{
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 280px;
+}
+
+
+#right-buttons{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* flex-direction:column; */
+  width: 100px;
+
+}
+
+
+
+#clear-input{
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgba(33, 230, 66, 0.596);
+}
+
+#clear-all{
+  display: block;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: rgba(245, 12, 90, 0.788);
+}
+
+
+/* #beemo-face{
+  background-image: url("beemo_face.png");
+  background-size: contain;
+} */
+
+#beemo-face {
+  /* width: 100%;
+  height: 100%; */
+  background-image:url("beemo_face.png");
+  background-size: contain;
+}
+
+
+
+#pg13{
+  height:20px;
+  width:20px;
+}

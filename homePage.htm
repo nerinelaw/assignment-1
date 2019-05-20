@@ -6,22 +6,24 @@
     
     <nav id="navigation">
       <div class="tab">
-        <button class="tablinks" onclick="openWelcome()">Home Page</button>
+        <button idclass="tablinks" onclick="openWelcome()">Home Page</button>
         <button class="tablinks" onclick="openChatPage()">Chat</button>
+        
+    <img id="introduction" src="introduction.png" align="right">
       </div>
     </nav>
     
-    <header id="header">
+    <!-- <header id="home-header">
       <p>
-        <span>Welcome!</span>
+        <!-- <img src="introduction.png" align="right"> -->
       </p>
-    </header>
+    </header> -->
+<!-- 
+    <img id="introduction" src="introduction.png" align="right"> -->
     
     <div id="message-container">
       <textarea id="beemo-face" rows="25" cols="75" readonly></textarea>
-      <!-- <button onclick="clearMessages()">Clear Messages</button> -->
         <div id="bottom-background">
-    
         </div>  <div id="send-container">
           <div id="enter-container">
             <textarea id="text-input" rows=3 cols=60></textarea>
@@ -31,6 +33,10 @@
     
       </div>
     </div>
+
+    <!-- <div id="introduction-container">
+      <img src="introduction.png">
+    </div> -->
       
     
     <div id="button-container">
@@ -44,10 +50,10 @@
         </div>    
         <div id="middle-buttons">
           <img src="triangle.png"">
-          <button id="clear-all" onclick="clearMessages()">Clear Messages</button>
+          <img src="red-circle.png"">
         </div>    
         <div id="right-buttons">
-          <button id="clear-input" onclick="clearInputText()">Clear Input</button>
+            <img src="green-circle.png"">
     
     
         </div>

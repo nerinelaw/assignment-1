@@ -22,6 +22,12 @@
   z-index: 1;
 }
 
+#name-input{
+  position: left;
+  background-color: rgb(10, 48, 46);
+  color:rgb(18, 245, 18);
+}
+
 #home-page-button{
   display: block;
   height: 75px;
@@ -51,7 +57,7 @@
   height: 525px;
   width: 100%;
   /* border: 3px solid rgba(0, 0, 255, 0.63); */
-  background-color: rgba(82, 184, 159, 0.774);
+  background-color: rgba(82, 184, 159, 0.763);
 }
 
 
@@ -108,7 +114,7 @@ textarea{
   height: 100%;
   width: 100%;
   /* border: 3px solid rgba(0, 0, 255, 0.63); */
-  background-color: rgba(82, 184, 159, 0.774);
+  background-color: rgba(82, 184, 159, 0.763);
   
 }
 

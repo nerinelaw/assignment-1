@@ -1,25 +1,22 @@
 var message;
 var messageList = [];
 var name;
-var myJSON = '{"welcome-message":"Welcome", "random":"Leave a message!"}';
+var myJSON = '{"welcome":"Welcome!", "random":"Leave a message!"}';
 var myObj;
 
-function loadText(){
-    name = document.getElementById("name-input");
-    myObj = JSON.parse(myJSON);
-    messageList.push(myObj.welcome-message + name + "!");
-    openChatPage();
-}
+// Loads welcome message 
+// Parses through JSON string and gets string from object
+// Adds string to messageList to display
 
 function loadMessages(){
     myMsg = JSON.parse(myJSON);
+    messageList.push(myMsg.welcome);
     messageList.push(myMsg.random);
     document.getElementById("see-message").value = messageList.join("\n\n");
 }
 
-function enterChat(){
-    openChatPage();
-}
+// Checks input text for swear word
+// replaces swear word with starred out word
 
 function purifyWord(phrase){
     var checkBox = document.getElementById("pg13");
@@ -31,6 +28,10 @@ function purifyWord(phrase){
     return phrase;
 }
 
+
+// Get message from textarea and add to list
+// Update list to display new list
+
 function addMessage(){  
     message = document.getElementById("text-input").value;
     if (message != ""){
@@ -40,18 +41,26 @@ function addMessage(){
     }
 }
 
+// Clears text from input textarea
+
 function clearInputText(){
     document.getElementById("text-input").value = "";
 }
+
+// Clears all messages in message textarea
 
 function clearMessages(){
     messageList = [];
     document.getElementById("see-message").value = messageList;
 }
 
+// Redirects to welcome page
+
 function openWelcome(){
     window.location.href="homePage.htm";
 }
+
+// Redirects to message page
 
 function openChatPage(){
     window.location.href="chatPage.htm";

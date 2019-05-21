@@ -1,20 +1,23 @@
-﻿<head>
+﻿<!-- Load CSS and Javascript -->
+
+<head>
     <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <script type="text/javascript" src="functions.js"></script>
     
-    
+<!-- Navigation Pane -->
+<!-- Holds home button and message button -->
+
     <nav id="navigation">
-      <div class="tab">
-        <button idclass="tablinks" onclick="openWelcome()">Home Page</button>
-        <button class="tablinks" onclick="openChatPage()">Message</button>
-        
-    <img id="introduction" src="introduction.png" align="right">
-      </div>
+        <button id="home-page-button" idclass="tablinks" onclick="openWelcome()">Home Page</button>
+        <button id="chat-page-button" class="tablinks" onclick="openChatPage()">Message</button>
+    <img id="introduction" src="introduction.png" width="750" height="94" align="right">
     </nav>
 
 
-    
+<!-- Message Container -->
+<!-- Holds BMO face (textarea), enter box, and send button image -->
+
     <div id="message-container">
       <textarea id="beemo-face" rows="25" cols="75" readonly></textarea>
         <div id="bottom-background">
@@ -29,15 +32,19 @@
       </div>
     </div>
     
-    
+<!-- Button Container -->
+<!-- Holds images of buttons for clear messages, clear input text, and decorative buttons -->
+
     <div id="button-container">
       <div id="button-block">
         <div id="left-buttons">
           <img src="cross.png"">
-          <label id="switch"></label>
-            <input type="checkbox" id="pg13">
-            <span class="slider round">PG-13</span>
-          </label>  
+          <div id= "pg13-box">
+              <label class="switch">
+                  <input type="checkbox" id="pg13">
+                  <div id="pg13-text" class="boxed">PG-13</div>
+              </label>             
+          </div>
         </div>    
         <div id="middle-buttons">
           <img src="triangle.png"">
